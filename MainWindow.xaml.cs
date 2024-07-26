@@ -155,6 +155,7 @@ namespace GORAE_REF_SYSTEM
             {
                 MessageBox.Show($"Modbus 연결 실패: {ex.Message}", "오류", MessageBoxButton.OK, MessageBoxImage.Error);
                 Application.Current.Shutdown(); // 프로그램 종료
+                // 체크 아웃 테스트
             }
         }
 
