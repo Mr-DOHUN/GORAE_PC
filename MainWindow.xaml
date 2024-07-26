@@ -1,0 +1,345 @@
+﻿<Window x:Class="GORAE_REF_SYSTEM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GORAE_REF_SYSTEM" 
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        Title="고래자동화 냉매 주입 관리 시스템 V01" 
+        Height="800" Width="1400">
+    <Grid>
+
+        <!--전체 화면 분활-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- 회사 로고 표시 -->
+        <Grid Grid.Row="0" Grid.Column="0" Margin="1">
+            <Image  Source="C:\Users\korea\Desktop\GORAE_REF_SYSTEM\회사 레터지.jpg" 
+                    Height="120"
+                    VerticalAlignment="Bottom">
+            </Image>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Margin="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--냉매 종류 -->
+            <Border Grid.Row="0" 
+                    Grid.Column="0" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Background="Aqua"
+                    Margin="2">
+
+                <TextBlock FontSize="25"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center">냉매 종류</TextBlock>
+            </Border>
+
+            <!--냉매 종류 결과 값-->
+            <Border Grid.Row="0" 
+                    Grid.Column="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">R410a</TextBlock>
+            </Border>
+
+            <!--저울 값-->
+            <Border Grid.Row="0" 
+                    Grid.Column="2" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Background="Aqua"
+                    Margin="2">
+                <TextBlock FontSize="25"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center">저울 값(g)</TextBlock>
+
+            </Border>
+
+            <!--저울 결과 값-->
+            <Border Grid.Row="0" 
+                    Grid.Column="3" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <TextBlock FontSize="25"
+                          FontWeight="Bold"
+                          VerticalAlignment="Center"
+                          Name="refScaleValue"
+                          HorizontalAlignment="Center">
+                </TextBlock>
+            </Border>
+
+            <!--설정 값-->
+            <Border Grid.Row="1" 
+                    Grid.Column="0" 
+                    BorderBrush="Black" 
+                    BorderThickness="1"
+                    Background="Aqua"
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">설정 값(g)</TextBlock>
+            </Border>
+
+            <!--설정 결과 값-->
+            <Border Grid.Row="1" 
+                    Grid.Column="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                            Name="refSelValue"
+                            HorizontalAlignment="Center">
+
+                </TextBlock>
+
+            </Border>
+
+            <!--주입 값-->
+            <Border Grid.Row="1" 
+                    Grid.Column="2" 
+                    BorderBrush="Black" 
+                    BorderThickness="1"
+                    Background="Aqua"
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">주입 값(g)</TextBlock>
+            </Border>
+
+            <!--주입 결과 값-->
+            <Border Grid.Row="1" 
+                    Grid.Column="3" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            Name="refInjcetValue"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                </TextBlock>
+            </Border>
+
+            <!--공정시간-->
+            <Border Grid.Row="2" 
+                    Grid.Column="0" 
+                    BorderBrush="Black" 
+                    BorderThickness="1"
+                    Background="Aqua"
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">주입시간(s)</TextBlock>
+            </Border>
+
+            <!--공정시간 결과 값-->
+            <Border Grid.Row="2" 
+                    Grid.Column="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            Name="refTimeValue"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                </TextBlock>
+            </Border>
+
+            <!--진공체크 값-->
+            <Border Grid.Row="2" 
+                    Grid.Column="2" 
+                    BorderBrush="Black" 
+                    BorderThickness="1"
+                    Background="Aqua"
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">진공체크 값(Torr)</TextBlock>
+            </Border>
+
+            <!--진공체크 결과 값-->
+            <Border Grid.Row="2" 
+                    Grid.Column="3" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <TextBlock  FontSize="25"
+                            FontWeight="Bold"
+                            Name="refVcValue"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                </TextBlock>
+            </Border>
+        </Grid>
+
+        <!-- 현재 시간 표시 , PLC 연결 확인 -->
+        <Grid Grid.Row="0" Grid.Column="1" Margin="3" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       Name="dclock"
+                       FontSize="37"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+            <Border Grid.Row="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="5">
+            </Border>
+
+            <Border Grid.Row="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="5,5,5,-496">
+                <ListBox VerticalAlignment="Top"
+                         HorizontalAlignment="Left"
+                         FontSize="20"
+                         Name="LstBox"
+                         Width="430">
+                </ListBox>
+            </Border>
+        </Grid>
+
+        <!-- 온도 압력 그래프 부분 분활 -->
+        <Grid Grid.Row="2" Grid.Column="0" Margin="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--ACCUM IN TEMP-->
+            <Border Grid.Row="0" 
+                    Grid.Column="0" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <oxy:PlotView 
+                    Margin="5" 
+                    Model="{Binding AccumInTemp}" />
+            </Border>
+
+            <!--ACCUM IN PRESSURE-->
+            <Border Grid.Row="0" 
+                    Grid.Column="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <oxy:PlotView 
+                    Margin="5" 
+                    Model="{Binding AccumInPress}" />
+            </Border>
+
+            <!--ACCUM OUT TEMP-->
+            <Border Grid.Row="1" 
+                    Grid.Column="0" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <oxy:PlotView 
+                    Margin="5" 
+                    Model="{Binding AccumOutTemp}" />
+            </Border>
+
+            <!--ACCUM OUT PRESSURE-->
+            <Border Grid.Row="1" 
+                    Grid.Column="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <oxy:PlotView
+                    Margin="5,0,5,5" 
+                    Model="{Binding AccumOutPress}" Height="114" VerticalAlignment="Bottom" />
+            </Border>
+
+            <!--BOOSTER IN TEMP-->
+            <Border Grid.Row="2" 
+                    Grid.Column="0" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <oxy:PlotView
+                    Margin="5" 
+                    Model="{Binding BoosterInTemp}" />
+            </Border>
+
+            <!--BOOSTER IN PRESSURE-->
+            <Border Grid.Row="2" 
+                    Grid.Column="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <oxy:PlotView 
+                    Margin="5" 
+                    Model="{Binding BoosterInPress}" />
+            </Border>
+
+            <!--BOOSTER OUT TEMP-->
+            <Border Grid.Row="3" 
+                    Grid.Column="0" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <oxy:PlotView
+                    Margin="5" 
+                    Model="{Binding BoosterOutTemp}" />
+            </Border>
+
+            <!--BOOSTER OUT PRESSURE-->
+            <Border Grid.Row="3" 
+                    Grid.Column="1" 
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Margin="2">
+                <oxy:PlotView 
+                    Margin="5" 
+                    Model="{Binding BoosterOutPress}" />
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

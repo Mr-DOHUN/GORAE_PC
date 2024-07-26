@@ -1,0 +1,128 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\monitering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|solutionrelative:monitering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|c:\\users\\korea\\desktop\\gorae_ref_system\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\serialportadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|solutionrelative:serialportadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A9F9E958-EABF-4B2C-8FF0-DFDBDA3C0964}|GORAE_REF_SYSTEM.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 916,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwIsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T04:42:13.787Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-23T04:42:14.296Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-25T01:03:23.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SerialPortAdapter.cs",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\SerialPortAdapter.cs",
+              "RelativeDocumentMoniker": "SerialPortAdapter.cs",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\SerialPortAdapter.cs",
+              "RelativeToolTip": "SerialPortAdapter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T08:13:07.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Monitering.cs",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\Monitering.cs",
+              "RelativeDocumentMoniker": "Monitering.cs",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\GORAE_REF_SYSTEM\\Monitering.cs",
+              "RelativeToolTip": "Monitering.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAQwDcAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T08:12:26.029Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 82,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 65,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{007a3a6b-b5b2-454d-a2bd-cf929f989be2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
