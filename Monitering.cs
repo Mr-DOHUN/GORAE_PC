@@ -36,35 +36,35 @@ namespace GORAE_REF_SYSTEM
 
         public MainViewModel()
         {
-            AccumInTemp = CreatePlotModel("Accum In Temp", 0, 40);
+            AccumInTemp = CreatePlotModel("Accum In Temp", 0, 50);
             AccumInTempData = new ObservableCollection<DataPoint>();
             AccumInTemp.Series.Add(new LineSeries { ItemsSource = AccumInTempData });
 
-            AccumInPress = CreatePlotModel("Accum In Press", 0, 40);
+            AccumInPress = CreatePlotModel("Accum In Press", 0, 50);
             AccumInPressData = new ObservableCollection<DataPoint>();
             AccumInPress.Series.Add(new LineSeries { ItemsSource = AccumInPressData });
 
-            AccumOutTemp = CreatePlotModel("Accum Out Temp", 0, 40);
+            AccumOutTemp = CreatePlotModel("Accum Out Temp", 0, 50);
             AccumOutTempData = new ObservableCollection<DataPoint>();
             AccumOutTemp.Series.Add(new LineSeries { ItemsSource = AccumOutTempData });
 
-            AccumOutPress = CreatePlotModel("Accum Out Press", 0, 40);
+            AccumOutPress = CreatePlotModel("Accum Out Press", 0, 50);
             AccumOutPressData = new ObservableCollection<DataPoint>();
             AccumOutPress.Series.Add(new LineSeries { ItemsSource = AccumOutPressData });
 
-            BoosterInTemp = CreatePlotModel("Booster In Temp", 0, 40);
+            BoosterInTemp = CreatePlotModel("Booster In Temp", 0, 50);
             BoosterInTempData = new ObservableCollection<DataPoint>();
             BoosterInTemp.Series.Add(new LineSeries { ItemsSource = BoosterInTempData });
 
-            BoosterInPress = CreatePlotModel("Booster In Press", 0, 40);
+            BoosterInPress = CreatePlotModel("Booster In Press", 0, 50);
             BoosterInPressData = new ObservableCollection<DataPoint>();
             BoosterInPress.Series.Add(new LineSeries { ItemsSource = BoosterInPressData });
 
-            BoosterOutTemp = CreatePlotModel("Booster Out Temp", 0, 40);
+            BoosterOutTemp = CreatePlotModel("Booster Out Temp", 0, 50);
             BoosterOutTempData = new ObservableCollection<DataPoint>();
             BoosterOutTemp.Series.Add(new LineSeries { ItemsSource = BoosterOutTempData });
 
-            BoosterOutPress = CreatePlotModel("Booster Out Press", 0, 40);
+            BoosterOutPress = CreatePlotModel("Booster Out Press", 0, 50);
             BoosterOutPressData = new ObservableCollection<DataPoint>();
             BoosterOutPress.Series.Add(new LineSeries { ItemsSource = BoosterOutPressData });
 
